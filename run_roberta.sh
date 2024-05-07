@@ -3,7 +3,7 @@ export TASK_NAME=RTE
 
 python3 run_glue_skeleton.py \
   --model_type roberta \
-  --model_name_or_path roberta-base-cased \
+  --model_name_or_path roberta-base \
   --task_name $TASK_NAME \
   --do_train \
   --do_eval \
