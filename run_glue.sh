@@ -2,7 +2,7 @@ export GLUE_DIR=$HOME/glue_data
 export TASK_NAME=RTE
 
 python3 run_glue_skeleton.py \
-  --model_type bert \
+  --model_type xlnet \
   --model_name_or_path bert-base-cased \
   --task_name $TASK_NAME \
   --do_train \
