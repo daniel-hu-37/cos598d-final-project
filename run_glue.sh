@@ -3,7 +3,7 @@ export TASK_NAME=RTE
 
 python3 run_glue_skeleton.py \
   --model_type xlnet \
-  --model_name_or_path bert-base-cased \
+  --model_name_or_path xlnet-base-cased \
   --task_name $TASK_NAME \
   --do_train \
   --do_eval \
