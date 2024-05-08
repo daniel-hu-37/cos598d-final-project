@@ -225,6 +225,8 @@ def train(args, train_dataset, model, tokenizer):
                 # TODO(cos598d): perform backward pass here
                 loss.backward()
                 for param in model.parameters():
+                    if param.requires_grad and param.grad is None:
+                        param.grad = torch.zeros_like(param)
                     dist.all_reduce(param.grad.data, op=dist.ReduceOp.SUM)
                     param.grad.data /= dist.get_world_size()
 
