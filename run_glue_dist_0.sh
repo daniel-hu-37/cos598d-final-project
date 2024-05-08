@@ -16,7 +16,7 @@ python3 run_glue_dist.py \
   --num_train_epochs 3 \
   --output_dir /tmp/$TASK_NAME/ \
   --overwrite_output_dir \
-  --master_ip 10.10.1.0 \
+  --master_ip 10.10.1.1 \
   --master_port 5555 \
 
   # --model_type xlnet \
