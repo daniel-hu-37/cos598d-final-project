@@ -674,7 +674,7 @@ def main():
         torch.distributed.barrier()  # Make sure only the first process in distributed training will download model & vocab
 
     model.to(args.device)
-    model = DDP(model)
+    model = DDP(model, find_unused_parameters=True)
 
     logger.info("Training/evaluation parameters %s", args)
 
