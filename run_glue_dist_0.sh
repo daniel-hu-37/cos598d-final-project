@@ -2,8 +2,8 @@ export GLUE_DIR=$HOME/glue_data
 export TASK_NAME=RTE
 
 python3 run_glue_dist.py \
-  --model_type bert \
-  --model_name_or_path bert-base-cased \
+  --model_type xlnet \
+  --model_name_or_path xlnet-base-cased \
   --task_name $TASK_NAME \
   --do_train \
   --do_eval \
@@ -16,8 +16,8 @@ python3 run_glue_dist.py \
   --output_dir /tmp/$TASK_NAME/ \
   --overwrite_output_dir
 
-  --model_type bert \
-  --model_name_or_path bert-base-cased \
+  --model_type xlnet \
+  --model_name_or_path xlnet-base-cased \
   --task_name $TASK_NAME \
   --do_train \
   --do_eval \
