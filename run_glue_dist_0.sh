@@ -14,7 +14,9 @@ python3 run_glue_dist.py \
   --learning_rate 2e-5 \
   --num_train_epochs 3 \
   --output_dir /tmp/$TASK_NAME/ \
-  --overwrite_output_dir
+  --overwrite_output_dir \
+  --master_ip 10.10.1.0 \
+  --master_port 5555 \
 
   # --model_type xlnet \
   # --model_name_or_path xlnet-base-cased \
