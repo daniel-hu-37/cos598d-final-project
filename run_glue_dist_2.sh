@@ -8,6 +8,7 @@ python3 run_glue_dist.py \
   --do_train \
   --do_eval \
   --local_rank 2\
+  --world_size 4\
   --data_dir $GLUE_DIR/$TASK_NAME \
   --max_seq_length 128 \
   --per_gpu_train_batch_size 16 \
