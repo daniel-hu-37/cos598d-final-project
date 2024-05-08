@@ -633,6 +633,9 @@ def main():
     # TODO(cos598d): load the model using from_pretrained. Remember to pass in `config` as an argument.
     # If you pass in args.model_name_or_path (e.g. "bert-base-cased"), the model weights file will be downloaded from HuggingFace.
     if config.n_token == -1:
+        print()
+        print("AFASFASJ:LKJL:J")
+        print()
         config.n_token = config.vocab_size
 
     model = model_class.from_pretrained(args.model_name_or_path, config=config)
