@@ -1,7 +1,7 @@
 export GLUE_DIR=$HOME/glue_data
 export TASK_NAME=RTE
 
-python3 run_glue_dist.py \
+python3 task2b/run_glue.py \
   --model_type xlnet \
   --model_name_or_path xlnet-base-cased \
   --task_name $TASK_NAME \
