@@ -15,6 +15,6 @@ python3 run_glue_dist.py \
   --learning_rate 2e-5 \
   --num_train_epochs 3 \
   --output_dir /tmp/$TASK_NAME/ \
-  --master_ip 10.10.1.1 \
+  --master_ip 10.10.1.2 \
   --master_port 5555 \
   --overwrite_output_dir
