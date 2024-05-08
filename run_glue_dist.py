@@ -637,6 +637,7 @@ def main():
         )
 
     init_process(args.local_rank, args.master_ip, args.master_port, args.world_size)
+    print("hello")
     print(torch.distributed.get_rank())
 
     # set up (distributed) training
